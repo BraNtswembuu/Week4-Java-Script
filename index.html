@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNB App Academy - Week 4 JavaScript</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <div class="lesson">
+        <h3>Lesson 1: Show text on Page</h3>
+
+        <h2 id="heading1">Hello</h2>
+        <p id="paragraph1">World!</p>
+        <button onClick="lesson1()">Change Text</button>
+
+        <script>
+           function lesson1() {
+                document.getElementById("heading1").innerHTML = "Goodbye";
+                document.getElementById("paragraph1").innerHTML = "Moon!";
+           }
+        </script>
+    </div>
+</body>
+</html>
