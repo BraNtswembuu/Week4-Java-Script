@@ -23,5 +23,30 @@
            }
         </script>
     </div>
+
+
+
+    <!---Lesson2 -->
+    <div class="lesson">
+        <h2>Lesson 2: Variables (Text Storage)</h2>
+
+        <h2 id="heading2">Text will Change</h2> 
+        <p id="paragraph2">More text here</p>
+        <button onclick="lesson2()">Use Variables</button>
+
+        <script>
+            function lesson2() {
+                var message1 = "Hello everyone!";
+                var messgae2 = "How are you?";
+                var message3 = "This is a test.";
+                
+                document.getElementById("heading2").innerHTML = message1;
+                document.getElementById("paragraph2").innerHTML = message2 + message3; 
+            }
+        </script>
+    </div>
+
+
+    
 </body>
 </html>
