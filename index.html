@@ -37,7 +37,7 @@
         <script>
             function lesson2() {
                 var message1 = "Hello everyone!";
-                var messgae2 = "How are you?";
+                var message2 = "How are you?";
                 var message3 = "This is a test.";
                 
                 document.getElementById("heading2").innerHTML = message1;
@@ -47,6 +47,21 @@
     </div>
 
 
-    
+    <!---Lesson 3-->    
+    <div class="lesson">    
+        <h3>Lesson 3: Variables (Numbers)</h3>
+
+        <p id="math">Math equation will show up here</p>
+        <button onclick="lesson3()">Do Math</button>
+
+        <script>
+            function lesson3(){
+                var num1 = 5;
+                var num2 = 7;
+                document.getElementById("math").innerHTML = num1 + "x" + num2 + "=" + (num1 * num2);
+            }
+        </script>
+
+    </div>
 </body>
 </html>
