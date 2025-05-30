@@ -121,7 +121,7 @@
     </div>
 
 <!---Lesson 7--> 
-<div class="lesson">
+    <div class="lesson">
     <h2>Lesson 7: Functions with Parameters</h2>
     <p><strong>Concepts</strong>: Passing data into Functions</p>
 
@@ -136,7 +136,29 @@
             document.getElementById("addition7").innerHTML = num1 + " + " + num2 + " = " + (num1 + num2);
         }
     </script>
-</div>
+    </div>
+
+
+
+<!---Lesson 8-->  
+    <div class="lesson">
+        <h2>Lesson 8: Function returns</h2>
+        <p><strong>Concepts:</strong> Functions returning values to be used elsewhere.</p>
+
+        <button onclick="runlesson8()">Calculate and Display Results</button>
+        <div class="output" id="addition8">Results will show here.</div>
+
+    <script>
+        function runlesson8() {
+            var result = addNumbersReturn(9, 12); // ✅ corrected function call
+            document.getElementById("addition8").innerHTML = "The sum of 9 and 12 is: " + result;
+        }
+
+        function addNumbersReturn(Num1, Num2) {
+            return Num1 + Num2;
+        }
+    </script>
+    </div>
 
 </div>     
 </body>
