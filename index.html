@@ -160,6 +160,27 @@
     </script>
     </div>
 
+
+
+    <!---Lesson 9-->  
+    <div class="lesson">
+        <h2>Lesson 9: Variable Scope</h2>
+        <p><strong>Concepts:</strong> Understnading where variables can be used</p>
+
+        <button onClick="demonstrateScope()"> Demonstrate VariableScope</button>
+        <div class="output" id="scopeOutput">Click button to see variables scope in action</div>
+
+        <script>
+            var globalVariable = "I am global variable";
+            function demonstrateScope() {
+                var localVariable = "I am local variable";
+                document.getElementById("scopeOutput").innerHTML += "<br>" + globalVariable;
+                document.getElementById("scopeOutput").innerHTML += "<br>" + localVariable;
+                console.log(globalVariable);
+                console.log(localVariable); // ✅ added for debugging
+            }
+        </script>
+        </div>
 </div>     
 </body>
 </html>
